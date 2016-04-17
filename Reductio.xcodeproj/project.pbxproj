@@ -91,7 +91,7 @@
 		E7D5B66C1C503D6A00F4AC74 = {
 			isa = PBXGroup;
 			children = (
-				E7D5B6781C503D6A00F4AC74 /* Source */,
+				E7D5B6781C503D6A00F4AC74 /* Sources */,
 				E73A00201C692734001E7C83 /* Tests */,
 				E7BBB8701C5FDE0D00759A68 /* Frameworks */,
 				E7D5B6771C503D6A00F4AC74 /* Products */,
@@ -107,7 +107,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E7D5B6781C503D6A00F4AC74 /* Source */ = {
+		E7D5B6781C503D6A00F4AC74 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				E7D5B6791C503D6A00F4AC74 /* Reductio.h */,
@@ -122,7 +122,7 @@
 				E760F0D81C63DE6300E422F8 /* Summarizer.swift */,
 				E7BBB8731C5FE82000759A68 /* TextRank.swift */,
 			);
-			path = Source;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,7 +191,6 @@
 					};
 					E7D5B6751C503D6A00F4AC74 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = V7M9A44686;
 					};
 				};
 			};
@@ -303,7 +302,6 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -351,7 +349,6 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -383,7 +380,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Source/Info.plist;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fdzsergio.Reductio;
@@ -401,7 +399,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Source/Info.plist;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fdzsergio.Reductio;

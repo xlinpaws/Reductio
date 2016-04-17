@@ -14,8 +14,8 @@ internal extension Array {
         return Float(self.count as Int)
     }
 
-    private func addCombo(previous: [Element], var pivotal: [Element]) -> [([Element], [Element])] {
-
+    private func addCombo(previous: [Element], pivotal: [Element]) -> [([Element], [Element])] {
+        var pivotal = pivotal
         return (0..<pivotal.count).map { _ -> ([Element], [Element]) in
             return (previous + [pivotal.removeAtIndex(0)], pivotal)
         }
