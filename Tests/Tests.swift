@@ -12,12 +12,18 @@ import XCTest
 
 class Tests: XCTestCase {
 
-    var str = "The first bot I ever befriended went by the name of GooglyMinotaur. The Minotaur appeared in 2001 to promote Amnesiac, the latest album from Radiohead, which was and still is my favorite band. I happily chatted with the Minotaur about Radiohead history, information about the band’s tour, and the MP3s it offered for download. The Minotaur was popular among fans like me: 1 million people added it as a friend, and in its lifetime it sent more than 60 million messages. But the Minotaur died a few months after it appeared, along with the rest of the era’s bots. The entire field seemed dormant for more than a decade. And then a couple years ago, the bots tentatively came back to life. For XOXCO, it started with tacos. By the fall of 2013, employees of the boutique software development company found themselves facing a problem familiar to office workers in Austin, Texas: total midday what’s-for-lunch paralysis. Should they order from the beloved Veracruz All Natural Food Truck? From ubiquitous Torchy’s Tacos, with three nearby locations? Or from El Primo, makers of what XOXCO co-founder Ben Brown calls 'the best fucking tacos' — conveniently located in the company’s parking lot? Brown, a developer and technologist, was determined to end the staff’s daily lunchtime indecision. In the year 2000, someone in Brown’s position might have simply Googled their options. In 2010, they might have opened the Yelp or Foursquare apps on their phones. But in the fall of 2013 Brown chose to write a bot — a simple piece of software that, when sent a message, returned a single lunch option from among the 20 or so restaurants and food trucks that Brown entered into its database. Lunchbot, as Brown called it, was a simple technology that soon grew more sophisticated. Other employees added restaurants to the program; later, an updated version accounted for places the team had recently ordered from, preventing consecutive visits to Torchy’s. In the proud tradition of stupid internet toys before it, Lunchbot evolved into a real business. Last October, XOXCO announced it had raised $1.5 million and would henceforth be known as Howdy, a bot company devoted to automating common workplace tasks. Its product lives in Slack, the fast-growing team-communication service. Howdy operates in the background, listening for the keywords and questions that will activate its powers. In its first iteration, Howdy automates meetings, asking what people are working on, collating their answers, and distributing them to the team. (And yes, Howdy will also take your lunch order.) In 2015, a host of trends converged to put the focus of investors and entrepreneurs squarely on messaging interfaces, and the growing number of bots that live inside them. On smartphones, WeChat, WhatsApp, and Facebook Messenger emerged as some of the most popular apps in the world. Meanwhile, Slack put messaging and conversations at the center of work — and opened itself up to accommodate developers’ bots. Advancements in natural language processing made it easier to build software that understands our requests and personalizes its responses. Growing frustration with the web over the last half-decade — both the slow-growing desktop web, and the just-plain-slow mobile web — has created a market for an alternative. In recent years, the alternative has been native apps. But most apps had a terrible 2015. The average person spends 80 percent of their time on mobile devices using just three apps, according to ComScore; for developers, buying new users with ads is prohibitively expensive — averaging $4.73 per installation, according to AdParlor, a social advertising company. Enter the message bots. As 2016 dawns, there’s a sense in Silicon Valley that the decades-old fantasy of a true digital assistant is due to roar back into the mainstream. If the trend in past years has been assistants powered by voice — Siri, Alexa, Cortana — in 2016 the focus is shifting to text. And if the bots come, as industry insiders are betting they will, there will be casualties: with artificial intelligence doing the searching for us, Google may see fewer queries. Our AI-powered assistants will manage more and more of our digital activities, eventually diminishing the importance of individual, siloed apps, and the app stores that sell them. Many websites could come to feel as outdated as GeoCities pages — and some companies might ditch them entirely. Nearly all of the information they provide can be fed into a bot and delivered via messaging apps. That said, there are bot skeptics. One venture capitalist I spoke to said bots could turn out to be 'the Bitcoin of 2015' — a seemingly irresistible idea that, after tens of millions of dollars of venture capital invested in related businesses, finds itself mired in a niche. Silicon Valley is always chasing the next big thing: bots may simply be the latest technology to enter the hype cycle. Other technologists told me that the technical challenges of building and scaling text-based virtual assistants cannot be overcome with the current technology. But that hasn’t deterred most of the entrepreneurs I spoke with. 'Messaging is going to be the interface — or the anti-interface — of the next phase of the internet,' says Robin Chan, CEO of Operator, an app that uses a mix of artificial intelligence and human workers to let you shop through text-based conversations. 'This is such a mega-trend that almost every large application is moving toward this.' Just this week, Mark Zuckerberg, announced he would spend 2016 building an Iron Man-style artificial intelligence to help him run his household and help him with work. He had been inspired, he said, by the work his team is doing on Facebook Messenger — and its quest to build an 'AI to answer any question you have.'"
+    // MARK: This text is an extract from http://www.theverge.com/2016/3/28/11284590/oculus-rift-vr-review
 
+    let str = "Oculus rarely brags about its industrial design, but one of the best things it’s done is make something so stereotypically geeky look (relatively) natural. The $599 consumer Rift is full of clever and thoughtful touches, starting with the delightfully soft rubberized carrying case it ships in, which makes the whole thing feel like a cyberpunk hacker’s console. The all-black headset is downright understated by gaming hardware standards, with a front of smooth rubber, sides coated in coarse cloth, and lenses surrounded by a web of lycra. It’s tethered to a PC by a single wire, which runs out your left temple and along one of the adjustable side straps. William Gibson’s best-known foray into virtual reality might be Neuromancer, but the Rift feels more like something from his design-obsessed novel Pattern Recognition — it’s the kind of minimalist product that its brand-allergic, coolhunting protagonist Cayce Pollard might approve of. Getting the Rift to fit right can prove elusive at first. While there’s a small focus knob at the bottom, a lot of the screen’s clarity depends on precisely how it’s angled toward your eyes, and it’s easy to give yourself a headache by strapping it as tightly as possible to keep the best fit. But once you get used to wearing it, the headset feels lighter and more comfortable than most of its competition, sealing against your face with a firm but pliable ring of foam. Since I have yet to break a sweat in the Rift, I can’t say how easy it is to clean, but the ring is removable and replaceable — although there’s no spare included. I also don’t have to deal with wearing glasses, but my Verge colleagues who do have had a positive response — they could either fit the headset over moderately-sized frames or, depending on their prescription, get the screen in focus without them. Along with a cylindrical black tracking camera on a slender 8-inch stand, the Rift comes with  two accessories: an Xbox One gamepad and a small, simple device called the Oculus Remote. Unlike Sony and HTC, Oculus isn’t launching the Rift with a full controller of its own, since its Oculus Touch hardware will arrive in the second half of this year. For now, the chunky and colorful Xbox gamepad seems slightly out of place alongside the sleek Rift design. The oval-shaped black remote, by contrast, fits right in, although its construction doesn’t feel as solid as the rest of the system. The Rift is something I’d be happy to have in my living room, and compared to the developer-focused Oculus devices of years past, it’s a breeze to set up. The 4-meter headset tether ends with one USB and one HDMI port, and the tracking camera is plugged in with its own USB cable — there’s no external power cable or controller box for either piece. You’ll just download Oculus’ Windows app and run through a short, though descriptive, setup checklist before getting into VR. Granted, getting to this point requires having a powerful gaming desktop, which can produce plenty of glitches on its own. And since most PCs have only one HDMI port, you’ll need to use a different connection for your monitor, an extra and not totally intuitive step for many people. For the most part, though, it’s as easy as I can imagine installing a totally new kind of computer hardware to be."
+
+    var keywords: [String]!
+    var summarize: [String]!
 
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+
+        keywords = str.keywords
+        summarize = str.summarize
     }
     
     override func tearDown() {
@@ -25,13 +31,103 @@ class Tests: XCTestCase {
         super.tearDown()
     }
     
-    func testKeywords() {
+    func testHasKeywords() {
 
-        str.keywords
+        XCTAssertNotNil(keywords)
     }
 
-    func testSummarize() {
+    func testEmptyTextKeywords() {
 
-        str.summarize
+        XCTAssert("".keywords.isEmpty)
     }
+
+    func testTextContainsKeywords() {
+
+        XCTAssert(keywords.contains("oculus"))
+        XCTAssert(keywords.contains("rift"))
+        XCTAssert(keywords.contains("headset"))
+    }
+
+    func testTextContainsSameKeywords() {
+        let expectation = expectationWithDescription("expect same keywords with different API")
+
+        Reductio.keywords(str) { words in
+            XCTAssertEqual(words, self.keywords)
+            expectation.fulfill()
+        }
+
+        waitForExpectationsWithTimeout(1.0, handler:nil)
+    }
+
+    func testReductioKeywordsWithCounter() {
+        let expectation = expectationWithDescription("expect five keywords for text")
+
+        Reductio.keywords(str, count: 5) { words in
+            XCTAssertEqual(words.count, 5)
+            expectation.fulfill()
+        }
+
+        waitForExpectationsWithTimeout(1.0, handler:nil)
+    }
+
+    func testReductioKeywordsWithCompression() {
+        let expectation = expectationWithDescription("expect all keywords for text")
+
+        Reductio.keywords(str, compression: 0) { words in
+            XCTAssertEqual(words, self.keywords)
+            expectation.fulfill()
+        }
+
+        waitForExpectationsWithTimeout(1.0, handler:nil)
+    }
+
+    func testReductioKeywordsWithOutboundsCompression() {
+        let expectation = expectationWithDescription("no expect any keywords for text")
+
+        Reductio.keywords(str, compression: 2.0) { words in
+            XCTAssert(words.isEmpty)
+            expectation.fulfill()
+        }
+
+        waitForExpectationsWithTimeout(1.0, handler:nil)
+    }
+
+    func testHasSummarize() {
+
+        XCTAssertNotNil(summarize)
+    }
+
+    func testTextContainsSameSummarize() {
+        let expectation = expectationWithDescription("expect same summarize with different API")
+
+        Reductio.summarize(str) { sentences in
+            XCTAssertEqual(sentences, self.summarize)
+            expectation.fulfill()
+        }
+
+        waitForExpectationsWithTimeout(1.0, handler:nil)
+    }
+
+    func testReductioSummarizeWithCounter() {
+        let expectation = expectationWithDescription("expect five sentences from summarize")
+
+        Reductio.summarize(str, count: 5) { words in
+            XCTAssertEqual(words.count, 5)
+            expectation.fulfill()
+        }
+
+        waitForExpectationsWithTimeout(1.0, handler:nil)
+    }
+
+    func testReductioSummarizeWithCompression() {
+        let expectation = expectationWithDescription("expect first sentence of summarize")
+
+        Reductio.summarize(str, compression: 0.95) { sentence in
+            XCTAssertEqual(sentence.count, 1)
+            expectation.fulfill()
+        }
+
+        waitForExpectationsWithTimeout(1.0, handler:nil)
+    }
+
 }

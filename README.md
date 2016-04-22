@@ -1,4 +1,15 @@
-# Reductio
+<p align="center" >
+  
+	<img src="./docs/img/logo.png" alt="Reductio" title="Reductio">
+
+</p>
+
+[![Travis CI](https://travis-ci.org/fdzsergio/Reductio.svg?branch=master)](https://travis-ci.org/fdzsergio/Reductio)
+[![Version](https://img.shields.io/cocoapods/v/Reductio.svg?style=flat)](http://cocoapods.org/pods/Reductio)
+[![codecov.io](https://codecov.io/github/fdzsergio/SFFocusViewLayout/coverage.svg?branch=master)](https://codecov.io/github/fdzsergio/Reductio?branch=master)
+[![License](https://img.shields.io/cocoapods/l/Reductio.svg?style=flat)](http://cocoapods.org/pods/Reductio)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Platform](https://img.shields.io/cocoapods/p/SFFocusViewLayout.svg?style=flat)](http://cocoapods.org/pods/Reductio)
 
 ## Overview
 
@@ -53,6 +64,10 @@ Reductio.summarize(text, compression: 0.80) { phrases in
 ```
 
 `["Since I have yet to break a sweat in the Rift, I can’t say how easy it is to clean, but the ring is removable and replaceable — although there’s no spare included. ", "While there’s a small focus knob at the bottom, a lot of the screen’s clarity depends on precisely how it’s angled toward your eyes, and it’s easy to give yourself a headache by strapping it as tightly as possible to keep the best fit. ", "The Rift is something I’d be happy to have in my living room, and compared to the developer-focused Oculus devices of years past, it’s a breeze to set up. "]`
+
+## Acknowledgement
+
+Thanks to [@cristinareina](http://cristinareinadesign.com) for her awesome logo. 
 
 ## License
 

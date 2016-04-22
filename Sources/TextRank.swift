@@ -53,7 +53,8 @@ internal class TextRank<T: Hashable> {
 
     // Check for convergence
     private func convergence(current: Node, nodes: Node) -> Bool {
-
+        if current == nodes { return true }
+        
         let total: Float = nodes.reduce(0.0) {
             return $0 + pow(current[$1.0] - $1.1, 2)
         }
