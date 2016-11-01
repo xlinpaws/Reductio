@@ -22,11 +22,11 @@ Reductio is a tool used to extract keywords and phrases using an implementation 
 Simply add Reductio as a dependency to your project's Package.swift.
 
 ```swift
-.Package(url: "https://github.com/fdzsergio/reductio.git", majorVersion: 0)
+.Package(url: "https://github.com/fdzsergio/reductio.git", majorVersion: 1)
 ```
 
 ### Cocoapods
-SFFocusViewLayout is available through [CocoaPods](http://cocoapods.org). To install
+Reductio is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
