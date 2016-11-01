@@ -1,0 +1,10 @@
+//
+//  Framework.xcconfig
+//  Reductio
+//
+//  Created by sergio on 11/1/16.
+//  Copyright © 2016 fdzsergio. All rights reserved.
+//
+#include "Base.xcconfig"
+
+SUPPORTED_PLATFORMS = iphoneos iphonesimulator appletvsimulator appletvos macosx watchsimulator watchos

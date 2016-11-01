@@ -1,0 +1,70 @@
+//
+//  Config.xcconfig
+//  Reductio
+//
+//  Created by sergio on 11/1/16.
+//  Copyright © 2016 fdzsergio. All rights reserved.
+//
+
+IPHONEOS_DEPLOYMENT_TARGET  = 8.0
+MACOSX_DEPLOYMENT_TARGET    = 10.9
+TVOS_DEPLOYMENT_TARGET      = 9.0
+WATCHOS_DEPLOYMENT_TARGET   = 2.0
+
+ONLY_ACTIVE_ARCH[config=Debug] = YES
+
+// Make it universal
+SUPPORTED_PLATFORMS                    = macosx iphonesimulator iphoneos watchos watchsimulator appletvos appletvsimulator
+VALID_ARCHS[sdk=macosx*]               = i386 x86_64
+VALID_ARCHS[sdk=iphoneos*]             = arm64 armv7 armv7s
+VALID_ARCHS[sdk=iphonesimulator*]      = i386 x86_64
+VALID_ARCHS[sdk=watchos*]              = armv7k
+VALID_ARCHS[sdk=watchsimulator*]       = i386
+VALID_ARCHS[sdk=appletvos*]            = arm64
+VALID_ARCHS[sdk=appletvsimulator*]     = x86_64
+
+// OSX-specific default settings
+FRAMEWORK_VERSION[sdk=macosx*]                = A
+COMBINE_HIDPI_IMAGES[sdk=macosx*]             = YES
+
+// iOS-specific default settings
+TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]  = 1,2
+TARGETED_DEVICE_FAMILY[sdk=iphone*]           = 1,2
+
+// TV-specific default settings
+TARGETED_DEVICE_FAMILY[sdk=appletvsimulator*] = 3
+TARGETED_DEVICE_FAMILY[sdk=appletv*]          = 3
+
+// Watch-specific default settings
+TARGETED_DEVICE_FAMILY[sdk=watchsimulator*]   = 4
+TARGETED_DEVICE_FAMILY[sdk=watch*]            = 4
+
+// Bitcode default settings
+ENABLE_BITCODE[sdk=macosx*]                   = NO
+ENABLE_BITCODE[sdk=watchsimulator*]           = YES
+ENABLE_BITCODE[sdk=watch*]                    = YES
+ENABLE_BITCODE[sdk=iphonesimulator*]          = YES
+ENABLE_BITCODE[sdk=iphone*]                   = YES
+ENABLE_BITCODE[sdk=appletvsimulator*]         = YES
+ENABLE_BITCODE[sdk=appletv*]                  = YES
+
+DEAD_CODE_STRIPPING = NO
+DEFINES_MODULE = YES
+GCC_DYNAMIC_NO_PIC = NO
+PRODUCT_NAME = $(PROJECT_NAME)
+INSTALL_PATH = @rpath
+LD_DYLIB_INSTALL_NAME = @rpath/$(PRODUCT_NAME).$(WRAPPER_EXTENSION)/$(PRODUCT_NAME)
+SKIP_INSTALL = YES
+APPLICATION_EXTENSION_API_ONLY = YES
+
+// Dynamic linking uses different default copy paths
+LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]           = $(inherited) '@executable_path/../Frameworks' '@loader_path/Frameworks'
+LD_RUNPATH_SEARCH_PATHS[sdk=iphoneos*]         = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+LD_RUNPATH_SEARCH_PATHS[sdk=iphonesimulator*]  = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+LD_RUNPATH_SEARCH_PATHS[sdk=watchos*]          = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+LD_RUNPATH_SEARCH_PATHS[sdk=watchsimulator*]   = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+LD_RUNPATH_SEARCH_PATHS[sdk=appletvos*]        = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+LD_RUNPATH_SEARCH_PATHS[sdk=appletvsimulator*] = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+
+HEADER_SEARCH_PATHS[sdk=iphone*]    = $(OBJROOT)/UninstalledProducts/include
+COMBINE_HIDPI_IMAGES[sdk=macosx*]   = YES

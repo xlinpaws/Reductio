@@ -8,10 +8,9 @@
 
 import Foundation
 
-internal class Summarizer {
+internal final class Summarizer {
 
     private let phrases: [Sentence]
-
     private let rank = TextRank<Sentence>()
 
     init(text: String) {
@@ -21,19 +20,19 @@ internal class Summarizer {
     func execute() -> [String] {
         buildGraph()
         return rank.execute()
-            .sort { $0.1 > $1.1 }
+            .sorted { $0.1 > $1.1 }
             .map { $0.0.text }
     }
 
     private func buildGraph() {
-        let combinations = self.phrases.combinations(2)
+        let combinations = self.phrases.combinations(length: 2)
 
         combinations.forEach { combo in
-            addNodes(combo.first!, combo.last!)
+            add(edge: combo.first!, node: combo.last!)
         }
     }
 
-    private func addNodes(pivotal: Sentence, _ node: Sentence) {
+    private func add(edge pivotal: Sentence, node: Sentence) {
         let pivotalWordCount: Float = pivotal.words.count
         let nodeWordCount: Float = node.words.count
 
@@ -41,7 +40,7 @@ internal class Summarizer {
         var score: Float = pivotal.words.filter { node.words.contains($0) }.count
         score = score / (log(pivotalWordCount) + log(nodeWordCount))
 
-        rank.addEdge(pivotal, node, weight: score)
-        rank.addEdge(node, pivotal, weight: score)
+        rank.add(edge: pivotal, to: node, weight: score)
+        rank.add(edge: node, to: pivotal, weight: score)
     }
 }

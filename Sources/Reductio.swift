@@ -13,12 +13,12 @@ import Foundation
  Extract all keywords from text sorted by relevance
 
  - parameter text: Text to extract keywords.
-
+ 
  - returns: sorted keywords from text
  
  */
 
-public func keywords(text: String, completion: ([String] -> Void)) {
+public func keywords(from text: String, completion: (([String]) -> Void)) {
     completion(text.keywords)
 }
 
@@ -33,8 +33,8 @@ public func keywords(text: String, completion: ([String] -> Void)) {
 
  */
 
-public func keywords(text: String, count: Int, completion: ([String] -> Void)) {
-    completion(text.keywords.slice(count))
+public func keywords(from text: String, count: Int, completion: (([String]) -> Void)) {
+    completion(text.keywords.slice(length: count))
 }
 
 /**
@@ -48,8 +48,8 @@ public func keywords(text: String, count: Int, completion: ([String] -> Void)) {
 
  */
 
-public func keywords(text: String, compression: Float, completion: ([String] -> Void)) {
-    completion(text.keywords.slice(compression))
+public func keywords(from text: String, compression: Float, completion: (([String]) -> Void)) {
+    completion(text.keywords.slice(percent: compression))
 }
 
 /**
@@ -62,7 +62,7 @@ public func keywords(text: String, compression: Float, completion: ([String] -> 
 
  */
 
-public func summarize(text: String, completion: ([String] -> Void)) {
+public func summarize(text: String, completion: (([String]) -> Void)) {
     completion(text.summarize)
 }
 
@@ -77,8 +77,8 @@ public func summarize(text: String, completion: ([String] -> Void)) {
 
  */
 
-public func summarize(text: String, count: Int, completion: ([String] -> Void)) {
-    completion(text.summarize.slice(count))
+public func summarize(text: String, count: Int, completion: (([String]) -> Void)) {
+    completion(text.summarize.slice(length: count))
 }
 
 /**
@@ -92,8 +92,8 @@ public func summarize(text: String, count: Int, completion: ([String] -> Void)) 
 
  */
 
-public func summarize(text: String, compression: Float, completion: ([String] -> Void)) {
-    completion(text.summarize.slice(compression))
+public func summarize(text: String, compression: Float, completion: (([String]) -> Void)) {
+    completion(text.summarize.slice(percent: compression))
 }
 
 public extension String {

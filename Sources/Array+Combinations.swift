@@ -17,7 +17,7 @@ internal extension Array {
     private func addCombo(previous: [Element], pivotal: [Element]) -> [([Element], [Element])] {
         var pivotal = pivotal
         return (0..<pivotal.count).map { _ -> ([Element], [Element]) in
-            return (previous + [pivotal.removeAtIndex(0)], pivotal)
+            return (previous + [pivotal.remove(at: 0)], pivotal)
         }
     }
 
@@ -36,7 +36,7 @@ internal extension Array {
     func slice(percent: Float) -> [Element] {
         if 0.0...1.0 ~= percent {
             let count = Int((1-percent)*self.count)
-            return slice(count)
+            return slice(length: count)
         }
         return []
     }
