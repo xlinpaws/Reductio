@@ -5,6 +5,7 @@ Pod::Spec.new do |spec|
   spec.homepage = "https://github.com/fdzsergio/Reductio"
   spec.license = { type: 'MIT', file: 'LICENSE' }
   spec.authors = { "Sergio Fernández" => 'fdzsergio@gmail.com' }
+  spec.source = { :git => "https://github.com/fdzsergio/Reductio.git", :tag => spec.version.to_s }
   spec.social_media_url = "http://twitter.com/fdzsergio"
   spec.ios.deployment_target = "8.0"
   spec.osx.deployment_target = "10.9"
