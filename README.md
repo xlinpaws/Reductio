@@ -1,7 +1,5 @@
-<p align="center" >
-  
-	<img src="docs/img/logo.png" alt="Reductio" title="Reductio">
-
+<p align="center">
+  <img src="docs/img/logo.png" />
 </p>
 
 [![Travis CI](https://travis-ci.org/fdzsergio/Reductio.svg?branch=master)](https://travis-ci.org/fdzsergio/Reductio)
