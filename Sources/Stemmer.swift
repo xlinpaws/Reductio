@@ -15,7 +15,7 @@ internal struct Stemmer {
 
     private static let language: Language = "en"
     private static let script: Script = "Latn"
-    private static let orthography = NSOrthography(dominantScript: script, languageMap: [script : [language]])
+    private static let orthography = NSOrthography(dominantScript: script, languageMap: [script: [language]])
 
     static func stemmingWordsInText(_ text: String) -> [String] {
         var stems: [String] = []
@@ -27,7 +27,9 @@ internal struct Stemmer {
 
         tagger.string = text
         tagger.setOrthography(orthography, range: range)
-        tagger.enumerateTags(in: range, scheme: NSLinguisticTagSchemeLemma, options: tagOptions) { (tag: String?, tokenRange, range, stop) in
+        tagger.enumerateTags(in: range,
+                             scheme: NSLinguisticTagSchemeLemma,
+                             options: tagOptions) { (_, tokenRange, _, _) in
             let token = (text as NSString).substring(with: tokenRange)
             if !token.isEmpty {
                 stems.append(token.lowercased())

@@ -16,10 +16,10 @@ internal struct Sentence {
     init(text: String) {
         self.text = text
         self.words = Stemmer.stemmingWordsInText(text)
-            .filter { !Search.binary(Stopwords, target: $0) }
+            .filter { !Search.binary(stopwords, target: $0) }
     }
 
-    init(text: String, stopwords: [String] = Stopwords) {
+    init(text: String, stopwords: [String] = stopwords) {
         self.text = text
         self.words = Stemmer.stemmingWordsInText(text)
             .filter { !Search.binary(stopwords, target: $0) }
@@ -31,12 +31,10 @@ extension Sentence: Hashable {
     var hashValue: Int {
         return text.hashValue
     }
-}
 
-// MARK: - Equatable
-
-func ==(lhs: Sentence, rhs: Sentence) -> Bool {
-    return lhs.text == rhs.text
+    public static func == (lhs: Sentence, rhs: Sentence) -> Bool {
+        return lhs.text == rhs.text
+    }
 }
 
 internal extension String {
@@ -46,10 +44,9 @@ internal extension String {
         var sentences = [String]()
         let range = self.range(of: self)
 
-        self.enumerateSubstrings(in: range!, options: .bySentences)  { (substring, substringRange, enclosingRange, end) in
+        self.enumerateSubstrings(in: range!, options: .bySentences) { (substring, _, _, _) in
             sentences.append(substring!)
         }
-        
         return sentences
     }
 }

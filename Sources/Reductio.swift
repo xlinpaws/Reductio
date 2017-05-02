@@ -98,7 +98,6 @@ public func summarize(text: String, compression: Float, completion: (([String]) 
 
 public extension String {
 
-
     /**
 
      Extract all keywords from text sorted by relevance
@@ -113,7 +112,6 @@ public extension String {
         return Keyword(text: self).execute()
     }
 
-
     /**
 
      Reordered text phrases by relevance on text
@@ -123,7 +121,7 @@ public extension String {
      - returns: sorted phrases from text
      
      */
-    
+
     var summarize: [String] {
         return Summarizer(text: self).execute()
     }

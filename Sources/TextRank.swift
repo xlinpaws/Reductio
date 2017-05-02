@@ -9,7 +9,7 @@
 import Foundation
 
 internal final class TextRank<T: Hashable> {
-    
+
     typealias Node      = [T: Float]
     typealias Edge      = [T: Float]
     typealias Graph     = [T: [T]]
@@ -55,14 +55,13 @@ internal final class TextRank<T: Hashable> {
     // Check for convergence
     private func convergence(_ current: Node, nodes: Node) -> Bool {
         if current == nodes { return true }
-        
+
         let total: Float = nodes.reduce(0.0) {
             return $0 + pow(current[$1.0] - $1.1, 2)
         }
         return sqrtf(total/current.count) < convergence
     }
 }
-
 
 private extension TextRank {
 
@@ -96,7 +95,7 @@ private extension TextRank {
     }
 }
 
-private extension Dictionary  {
+private extension Dictionary {
 
     subscript (key: Key) -> Float {
         return self[key] as? Float ?? 0

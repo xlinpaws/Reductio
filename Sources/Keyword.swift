@@ -57,6 +57,6 @@ private extension Keyword {
     }
 
     func removeStopWords(_ word: String) -> Bool {
-        return !Stopwords.contains(word)
+        return !stopwords.contains(word)
     }
 }
