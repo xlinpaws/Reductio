@@ -111,13 +111,13 @@
 				E7D5B67B1C503D6A00F4AC74 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			path = Sources;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		E7D5B66C1C503D6A00F4AC74 = {
 			isa = PBXGroup;
 			children = (
-				E7D5B6781C503D6A00F4AC74 /* Sources */,
+				E7D5B6781C503D6A00F4AC74 /* Source */,
 				E74D9E6F1EB8DE76000EE828 /* Configurations */,
 				E77598E21DC90FEE00C36753 /* Supporting Files */,
 				E73A00201C692734001E7C83 /* Tests */,
@@ -134,7 +134,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E7D5B6781C503D6A00F4AC74 /* Sources */ = {
+		E7D5B6781C503D6A00F4AC74 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				E75EE68A1C8CDB2F00B35225 /* Reductio.swift */,
@@ -147,7 +147,7 @@
 				E760F0D81C63DE6300E422F8 /* Summarizer.swift */,
 				E7BBB8731C5FE82000759A68 /* TextRank.swift */,
 			);
-			path = Sources;
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,7 +354,7 @@
 		E7D5B67F1C503D6A00F4AC74 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = Sources/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fdzsergio.Reductio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -363,7 +363,7 @@
 		E7D5B6801C503D6A00F4AC74 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = Sources/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fdzsergio.Reductio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
