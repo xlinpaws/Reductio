@@ -7,8 +7,7 @@
  */
 
 import XCTest
-
-@testable import Reductio
+import Reductio
 
 final class Tests: XCTestCase {
 

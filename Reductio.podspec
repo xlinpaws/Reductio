@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = "Reductio"
-  spec.version = "1.3.0"
+  spec.version = "1.4.0"
   spec.summary = "Reductio engine summarizer text."
   spec.homepage = "https://github.com/fdzsergio/Reductio"
   spec.license = { type: 'MIT', file: 'LICENSE' }
@@ -14,6 +14,8 @@ Pod::Spec.new do |spec|
   spec.tvos.deployment_target = '9.0'
   spec.watchos.deployment_target = '2.0'
 
-  spec.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.0' }
-  spec.source_files = 'Source/**/*.{h,swift}'
+  spec.source_files = 'Source/*.swift'
+  spec.frameworks = 'Foundation'
+  spec.swift_version = '4.2'
+
 end
