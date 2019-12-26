@@ -28,8 +28,8 @@ internal struct Sentence {
 
 extension Sentence: Hashable {
 
-    var hashValue: Int {
-        return text.hashValue
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(text)
     }
 
     public static func == (lhs: Sentence, rhs: Sentence) -> Bool {

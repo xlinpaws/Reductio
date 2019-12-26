@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = "Reductio"
-  spec.version = "1.4.0"
+  spec.version = "1.5.0"
   spec.summary = "Reductio engine summarizer text."
   spec.homepage = "https://github.com/fdzsergio/Reductio"
   spec.license = { type: 'MIT', file: 'LICENSE' }
@@ -16,6 +16,6 @@ Pod::Spec.new do |spec|
 
   spec.source_files = 'Source/*.swift'
   spec.frameworks = 'Foundation'
-  spec.swift_version = '4.2'
+  spec.swift_version = '5.0'
 
 end

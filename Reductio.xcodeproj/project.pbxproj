@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E73A00221C692734001E7C83 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73A00211C692734001E7C83 /* Tests.swift */; };
+		E73A00221C692734001E7C83 /* ReductioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73A00211C692734001E7C83 /* ReductioTests.swift */; };
 		E73A00241C692734001E7C83 /* Reductio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7D5B6761C503D6A00F4AC74 /* Reductio.framework */; };
 		E75EE6831C8C97BF00B35225 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75EE6821C8C97BF00B35225 /* Search.swift */; };
 		E75EE6851C8C98DD00B35225 /* Array+Combinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75EE6841C8C98DD00B35225 /* Array+Combinations.swift */; };
@@ -33,7 +33,7 @@
 
 /* Begin PBXFileReference section */
 		E73A001F1C692734001E7C83 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E73A00211C692734001E7C83 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		E73A00211C692734001E7C83 /* ReductioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReductioTests.swift; sourceTree = "<group>"; };
 		E73A00231C692734001E7C83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E74D9E701EB8DE76000EE828 /* Common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
 		E74D9E721EB8DE76000EE828 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
@@ -75,7 +75,7 @@
 		E73A00201C692734001E7C83 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				E73A00211C692734001E7C83 /* Tests.swift */,
+				E73A00211C692734001E7C83 /* ReductioTests.swift */,
 				E73A00231C692734001E7C83 /* Info.plist */,
 			);
 			path = Tests;
@@ -219,10 +219,11 @@
 			};
 			buildConfigurationList = E7D5B6701C503D6A00F4AC74 /* Build configuration list for PBXProject "Reductio" */;
 			compatibilityVersion = "Xcode 10.0";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = E7D5B66C1C503D6A00F4AC74;
 			productRefGroup = E7D5B6771C503D6A00F4AC74 /* Products */;
@@ -265,7 +266,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -274,7 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E73A00221C692734001E7C83 /* Tests.swift in Sources */,
+				E73A00221C692734001E7C83 /* ReductioTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +330,7 @@
 			buildSettings = {
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				SWIFT_VERSION = 5.0;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -340,6 +342,7 @@
 			buildSettings = {
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				SWIFT_VERSION = 5.0;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
