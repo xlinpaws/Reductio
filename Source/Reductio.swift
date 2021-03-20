@@ -19,6 +19,7 @@ import NaturalLanguage
  
  */
 
+@available(iOS 12.0, *)
 @available(OSX 10.14, *)
 public func setLanguage(to language: NLLanguage) {
     setStopwordLanguage(to: language)

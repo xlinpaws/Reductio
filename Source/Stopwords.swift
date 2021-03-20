@@ -11,6 +11,7 @@ import NaturalLanguage
 
 internal var stopwords = stopwordsEn
 
+@available(iOS 12.0, *)
 @available(OSX 10.14, *)
 internal func setStopwordLanguage(to language: NLLanguage) {
     switch language {
