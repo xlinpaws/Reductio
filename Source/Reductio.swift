@@ -10,6 +10,20 @@ import Foundation
 
 /**
  
+ Sets the language of Reductio for e.g. stopword selection
+
+ - parameter language: the language to set
+ 
+ - returns: nothing
+ 
+ */
+
+public func setLanguage(to language: Language) {
+    setStopwordLanguage(to: language)
+}
+
+/**
+ 
  Extract all keywords from text sorted by relevance
 
  - parameter text: Text to extract keywords.
@@ -94,6 +108,18 @@ public func summarize(text: String, count: Int, completion: (([String]) -> Void)
 
 public func summarize(text: String, compression: Float, completion: (([String]) -> Void)) {
     completion(text.summarize.slice(percent: compression))
+}
+
+/**
+
+ An enumeration of all supported languages
+ 
+ */
+
+public enum Language {
+    case en
+    case de
+    case pt
 }
 
 public extension String {
