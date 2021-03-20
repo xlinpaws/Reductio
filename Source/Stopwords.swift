@@ -7,17 +7,21 @@
  */
 
 import Foundation
+import NaturalLanguage
 
 internal var stopwords = stopwordsEn
 
-internal func setStopwordLanguage(to language: Language) {
+@available(OSX 10.14, *)
+internal func setStopwordLanguage(to language: NLLanguage) {
     switch language {
-    case .en:
+    case .english:
         stopwords = stopwordsEn
-    case .de:
+    case .german:
         stopwords = stopwordsDe
-    case .pt:
+    case .portuguese:
         stopwords = stopwordsPt
+    default:
+        stopwords = stopwordsEn
     }
 }
 

@@ -7,6 +7,7 @@
  */
 
 import Foundation
+import NaturalLanguage
 
 /**
  
@@ -18,7 +19,8 @@ import Foundation
  
  */
 
-public func setLanguage(to language: Language) {
+@available(OSX 10.14, *)
+public func setLanguage(to language: NLLanguage) {
     setStopwordLanguage(to: language)
 }
 
@@ -108,18 +110,6 @@ public func summarize(text: String, count: Int, completion: (([String]) -> Void)
 
 public func summarize(text: String, compression: Float, completion: (([String]) -> Void)) {
     completion(text.summarize.slice(percent: compression))
-}
-
-/**
-
- An enumeration of all supported languages
- 
- */
-
-public enum Language {
-    case en
-    case de
-    case pt
 }
 
 public extension String {
